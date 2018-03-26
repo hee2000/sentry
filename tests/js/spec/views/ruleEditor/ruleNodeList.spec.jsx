@@ -45,7 +45,7 @@ describe('RuleNodeList', function() {
       expect(wrapper.state('items')[0]).toHaveProperty('key_attr', 0);
       expect(wrapper.state('items')[1]).toHaveProperty('key_attr', 1);
       expect(wrapper.state('counter')).toEqual(2);
-      expect(wrapper.find('.node-selector option[value]').length).toEqual(1);
+      expect(wrapper.find('.node-selector option[value]')).toHaveLength(1);
     });
   });
 
