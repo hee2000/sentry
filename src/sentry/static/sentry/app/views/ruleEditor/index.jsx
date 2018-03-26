@@ -88,6 +88,7 @@ const RuleEditor = createReactClass({
         conditions: [],
         name: '',
         frequency: 30,
+        environment: ALL_ENVIRONMENTS_KEY,
       };
 
       this.setState({rule: defaultRule});
@@ -126,6 +127,10 @@ const RuleEditor = createReactClass({
     let endpoint = `/projects/${org.slug}/${project.slug}/rules/`;
     if (rule.id) {
       endpoint += rule.id + '/';
+    }
+
+    if (data.environment === ALL_ENVIRONMENTS_KEY) {
+      delete data.environment;
     }
 
     addMessage(t('Saving...'));

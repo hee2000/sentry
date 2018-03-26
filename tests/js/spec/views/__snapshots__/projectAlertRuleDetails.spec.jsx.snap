@@ -402,6 +402,7 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                           "marginRight": 5,
                         }
                       }
+                      value="__all_environments__"
                     >
                       <div
                         className="control-group required"
@@ -424,7 +425,7 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                             onChange={[Function]}
                             placeholder="--"
                             required={true}
-                            value=""
+                            value="__all_environments__"
                           >
                             <option
                               key="__all_environments__"
@@ -1088,6 +1089,7 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                           "marginRight": 5,
                         }
                       }
+                      value="__all_environments__"
                     >
                       <div
                         className="control-group required"
@@ -1110,7 +1112,7 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                             onChange={[Function]}
                             placeholder="--"
                             required={true}
-                            value=""
+                            value="__all_environments__"
                           >
                             <option
                               key="__all_environments__"
