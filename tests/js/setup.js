@@ -638,6 +638,9 @@ window.TestStubs = {
   ProjectAlertRule: () => {
     return {
       id: '1',
+      environment: 'staging',
+      conditions: [{name: 'An alert is first seen'}],
+      actions: [{name: 'Send a notification to all services'}],
     };
   },
 
